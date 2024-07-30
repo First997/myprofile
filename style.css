@@ -1,0 +1,412 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* Cor do texto mais clara */
+    background: linear-gradient(to right, #6a0dad, #00c6ff); /* Gradiente roxo neon com azul */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada de cor sólida para contraste */
+    border-radius: 10px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/54/f0/1e/54f01e941b397d2a4684e7ac6c3bf25e.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Ajuste a opacidade se necessário */
+    z-index: -1; /* Coloca a imagem atrás do texto */
+}
+
+header h1 {
+    position: relative;
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    color: #ffffff; /* Cor do texto para maior contraste */
+    background-color: rgba(0, 0, 0, 0.6); /* Camada de fundo semitransparente para melhor visibilidade */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 2rem;
+    border-radius: 10px;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(128, 0, 128, 0.7);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.tav-profile {
+    text-align: center;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.tav-banner {
+    margin-bottom: 1rem;
+}
+
+.tav-banner-image {
+    width: 100%; /* Ajuste a largura do banner */
+    height: auto;
+    border-radius: 8px;
+}
+
+.tav-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.tav-avatar {
+    border-radius: 50%;
+    width: 150px; /* Tamanho ajustado do avatar */
+    height: 150px; /* Tamanho ajustado do avatar */
+    object-fit: cover;
+}
+
+.tav-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tav-badge {
+    width: 50px; /* Tamanho do badge */
+    height: 50px; /* Tamanho do badge */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.music-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures items do not wrap */
+    overflow-x: auto; /* Add horizontal scroll if necessary */
+    gap: 15px; /* Ajuste o espaçamento entre os iframes */
+    padding: 10px 0; /* Optional: Add padding around the grid */
+}
+
+.music-grid iframe {
+    flex: 0 0 auto; /* Prevent iframes from growing or shrinking */
+    width: 300px; /* Ajustado para manter visibilidade */
+    height: 80px; /* Ajustado para manter visibilidade */
+    border-radius: 12px;
+}
+
+/* Optional: Adjust iframe height if needed */
+.music-grid iframe {
+    height: 80px; /* Height ajustado para manter visibilidade */
+}
+
+footer {
+    background-color: rgba(75, 0, 130, 0.8);
+    color: #f0f0f0; /* Cor do texto mais clara */
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* style.css */
+
+/* Adicionando estilo para a seção de filmes */
+.movies {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço suficiente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.movies h2 {
+    width: 100%; /* Garante que o título ocupe toda a largura */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.movie {
+    flex: 1 1 calc(33.333% - 20px); /* Ajuste a largura dos itens para 1/3 do contêiner com espaçamento */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre a imagem e a sinopse */
+}
+
+.movie h3 {
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.movie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre a imagem e a sinopse */
+}
+
+.movie-image {
+    width: 100%; /* Imagem ocupa toda a largura do contêiner */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.movie-synopsis {
+    color: #f0f0f0; /* Cor do texto mais clara */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para melhor legibilidade */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* style.css */
+
+/* Adicionando estilo para a seção de séries */
+.series {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço suficiente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.series h2 {
+    width: 100%; /* Garante que o título ocupe toda a largura */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.serie {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta a largura dos itens para 1/3 do contêiner com espaçamento */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre a imagem e a sinopse */
+}
+
+.serie h3 {
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.serie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre a imagem e a sinopse */
+}
+
+.serie-image {
+    width: 100%; /* Imagem ocupa toda a largura do contêiner */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.serie-synopsis {
+    color: #f0f0f0; /* Cor do texto mais clara */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para melhor legibilidade */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* style.css */
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0; /* Cor do texto mais clara */
+    background-color: #1a1a1a; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #4CAF50; /* Cor da borda */
+}
+
+/* style.css */
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0; /* Cor do texto mais clara */
+    background-color: #1a1a1a; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+/* Estilo para o perfil */
+.tav-profile {
+    position: relative;
+    text-align: center;
+}
+
+.tav-banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.tav-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tav-avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #4CAF50; /* Cor da borda */
+}
+
+.tav-badges {
+    margin-top: 10px;
+}
+
+.tav-badge {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo para a seção de músicas */
+.music {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.music h2 {
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.music-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo para filmes e séries */
+section h2 {
+    color: #f0f0f0; /* Cor do texto mais clara */
+}
+
+.movie, .serie {
+    margin-bottom: 20px;
+}
+
+.movie-content, .serie-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.movie-image, .serie-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-synopsis, .serie-synopsis {
+    color: #e0e0e0; /* Cor do texto das sinopses */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Estilo para o banner */
+.tav-banner {
+    width: 100%;
+    max-width: 800px; /* Define a largura máxima do banner */
+    margin: 0 auto; /* Centraliza o banner horizontalmente */
+}
+
+.tav-banner-image {
+    width: 100%;
+    height: auto;
+}
